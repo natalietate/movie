@@ -9,7 +9,7 @@
       <h3 class='display-4'>Members: </h3>
       <% @members.each do |member| %>
         <ul class="list-group">
-          <li class="list-group-item"><%= member.email %></li>
+          <li class="list-group-item"><%= link_to member.email, user_path(member) %></li>
         </ul>
       <% end %>
       <br>
